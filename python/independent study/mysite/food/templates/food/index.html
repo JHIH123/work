@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .top-section {
+            height: 40%;
+            background-color: #a63d3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .search-bar {
+            max-width: 800px;
+            width: 100%;
+        }
+        .search-bar input {
+            width: 75%;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+        .search-bar button {
+            width: 10%;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+        .search-bar .home-link {
+            width: 15%;
+            font-size: 2.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            -webkit-text-stroke: 1.3px #000000; font-weight: bold;            
+        }
+        .bottom-section {
+            height: 60%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <div class="container">
+            <div class="row search-bar-container">
+                <form method="get" action="{% url 'search' %}" class="form-inline search-bar">
+                    <p class="home-link">快揪搜</p>
+                    <input type="text" class="form-control mr-sm-2" name="q" placeholder="搜尋餐廳">
+                    <button type="submit" class="btn btn-outline-light">🔍</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

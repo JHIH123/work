@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #a63d3d;
+        }
+        .search-bar {
+            max-width: 500px;
+            margin: auto;
+        }
+        .search-bar input {
+            width: 80%;
+        }
+        .search-bar button {
+            width: 10%;
+        }
+        .search-bar .home-link {
+            width: 12%;
+            color: #fff;
+            -webkit-text-stroke: 0.3px #000000; font-weight: bold;      
+        }
+        .restaurant-container {
+            margin-top: 20px;
+        }
+        .restaurant-card {
+            display: flex;
+            border: 2px solid #a63d3d;
+            padding: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+            max-width: 1000px;
+        }
+        .restaurant-card img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .restaurant-info {
+            background-color: rgb(245,245,245);
+            border-radius: 5%;
+            max-width: 500px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row search-bar w-100">
+                <form method="get" class="form-inline w-100">
+                    <a href="{% url 'index' %}" class="home-link">快揪搜</a>
+                    <input type="text" class="form-control mr-sm-2" name="q" placeholder="想找什麼呢？">
+                    <button type="submit" class="btn btn-outline-light">🔍</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>搜尋結果</h1>
+        {% if query %}
+            <p>關鍵字: {{ query }}</p>
+            <div class="row">
+                {% for place in place_list %}
+                    <div class="col-12 restaurant-card">
+                        {% if place.photos.exists %}
+                            <img src="{{ place.photos.first.file.url }}" alt="{{ place.name }}" style="max-width: 250px;">
+                        {% endif %}
+                        <div class="restaurant-info">
+                            <label>店名：{{ place.name }}</label><br>
+                            <label>營業時間：{{ place.time }}</label><br>
+                            <label>地址：{{ place.address }}</label><br>
+                            <label>葷素類型：{{ place.food }}</label><br>
+                            <a href="{{ place.url }}">點擊查看更多店家資訊</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>沒有找到匹配的結果。</p>
+        {% endif %}
+    </div>
+</body>
+</html>

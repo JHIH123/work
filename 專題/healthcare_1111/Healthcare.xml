@@ -1,0 +1,1958 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Healthcare</name>
+    </assembly>
+    <members>
+        <member name="M:Healthcare.Controllers.AppointmentController.AppointmentList(Healthcare.Models.AppointmentListReq)">
+            <summary>
+            門診預約列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.AppointmentController.AppointmentInfo(Healthcare.Models.AppointmentInfoReq)">
+            <summary>
+            門診預約資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.AppointmentController.EditAppointment(Healthcare.Models.EditAppointmentReq)">
+            <summary>
+            編輯門診預約資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.AppointmentController.DeleteAppointment(Healthcare.Models.DeleteAppointmentReq)">
+            <summary>
+            刪除門診預約
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.DiagnosisController.DiagnosisInfo(Healthcare.Models.DiagnosisInfoReq)">
+            <summary>
+            診斷資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.DiagnosisController.EditDiagnosis(Healthcare.Models.EditDiagnosisReq)">
+            <summary>
+            編輯診斷資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.FamilyController.FamilyList(Healthcare.Models.FamilyListReq)">
+            <summary>
+            家屬列表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.FamilyController.FamilyInfo(Healthcare.Models.FamilyInfoReq)">
+            <summary>
+            家屬資訊
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.FamilyController.EditFamily(Healthcare.Models.EditFamilyReq)">
+            <summary>
+            編輯家屬資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.FamilyController.DeleteFamily(Healthcare.Models.DeleteFamilyReq)">
+            <summary>
+            刪除家屬資料
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.InpatientController.InpatientList(Healthcare.Models.InpatientListReq)">
+            <summary>
+            病患列表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.InpatientController.PatientInfo(Healthcare.Models.InpatientInfoReq)">
+            <summary>
+            病患資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.InpatientController.EditPatient(Healthcare.Models.EditInpatientReq)">
+            <summary>
+            編輯門診預約資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.InpatientController.DeleteInpatient(Healthcare.Models.DeleteInpatientReq)">
+            <summary>
+            刪除病患資料
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PatientController.PatientList(Healthcare.Models.PatientListReq)">
+            <summary>
+            病患列表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PatientController.PatientInfo(Healthcare.Models.PatientInfoReq)">
+            <summary>
+            病患資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PatientController.EditPatient(Healthcare.Models.EditPatientReq)">
+            <summary>
+            編輯門診預約資訊
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PatientController.DeletePatient(Healthcare.Models.DeletePatientReq)">
+            <summary>
+            刪除病患資料
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PrescriptionController.PrescriptionList(Healthcare.Models.PrescriptionListReq)">
+            <summary>
+            處方箋列表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PrescriptionController.PresMedicamentInfo(Healthcare.Models.PrescriptionInfoReq)">
+            <summary>
+            處方箋資訊
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PrescriptionController.EditPrescription(Healthcare.Models.EditPrescriptionReq)">
+            <summary>
+            編輯處方箋
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.PrescriptionController.DeletePrescription(Healthcare.Models.DeletePrescriptionReq)">
+            <summary>
+            刪除處方箋
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.StatisticController.GetSummary(Healthcare.Models.SummaryReq)">
+            <summary>
+            統計摘要(GAI)
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.StatisticController.GetStatistic(Healthcare.Models.StatisticReq)">
+            <summary>
+            取得統計圖表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.Controllers.StatisticController.GetAnalysis(Healthcare.Models.AnalysisReq)">
+            <summary>
+            取得分析圖表
+            </summary>
+            <param name="req">request body</param>
+            <returns></returns>
+        </member>
+        <member name="M:Healthcare.DAL.AppointmentDAL.GetList(Healthcare.Models.AppointmentListReq)">
+            門診預約列表
+        </member>
+        <member name="M:Healthcare.DAL.AppointmentDAL.GetInfo(System.String)">
+            門診預約資訊
+        </member>
+        <member name="M:Healthcare.DAL.AppointmentDAL.EditAppointment(Healthcare.Models.EditAppointmentReq)">
+            編輯預約資訊
+        </member>
+        <member name="M:Healthcare.DAL.AppointmentDAL.DeteleAppointment(System.String)">
+            刪除預約資訊
+        </member>
+        <member name="M:Healthcare.DAL.Authority.SHA3Encrypt(System.String)">
+            SHA3加密
+        </member>
+        <member name="M:Healthcare.DAL.Authority.TokenCrypto.ComputeHMACSHA256(System.String,System.String)">
+            產生 HMACSHA256 雜湊
+        </member>
+        <member name="M:Healthcare.DAL.Authority.CreateAccessToken(System.String,System.String,System.String)">
+            產生AccessToken
+        </member>
+        <member name="T:Healthcare.DAL.ApiKeyAttribute">
+            API Key驗證
+        </member>
+        <member name="M:Healthcare.DAL.DiagnosisDAL.GetInfo(System.String)">
+            診斷資訊
+        </member>
+        <member name="M:Healthcare.DAL.DiagnosisDAL.EditDiagnosis(Healthcare.Models.EditDiagnosisReq)">
+            編輯診斷資訊
+        </member>
+        <member name="M:Healthcare.DAL.FamilyDAL.GetList(Healthcare.Models.FamilyListReq)">
+            病患列表
+        </member>
+        <member name="M:Healthcare.DAL.FamilyDAL.GetInfo(System.Int32)">
+            病患資訊
+        </member>
+        <member name="M:Healthcare.DAL.FamilyDAL.EditFamily(Healthcare.Models.EditFamilyReq)">
+            編輯病患資訊
+        </member>
+        <member name="M:Healthcare.DAL.FamilyDAL.DeleteFamily(System.Int32)">
+            刪除預約資訊
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.GetList(Healthcare.Models.InpatientListReq)">
+            住院資料列表
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.GetInfo(System.String)">
+            住院資訊
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.EditInpatient(Healthcare.Models.EditInpatientReq)">
+            編輯住院資訊
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.DeleteInpatient(System.String)">
+            刪除住院資料
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.GetIcuList(Healthcare.Models.IcuListReq)">
+            加護病房資訊列表
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.GetIcuInfo(System.String)">
+            住院資訊
+        </member>
+        <member name="M:Healthcare.DAL.InpatientDAL.DeleteICU(System.String)">
+            刪除住院資料
+        </member>
+        <member name="M:Healthcare.DAL.PatientDAL.GetList(Healthcare.Models.PatientListReq)">
+            病患列表
+        </member>
+        <member name="M:Healthcare.DAL.PatientDAL.GetInfo(System.String)">
+            病患資訊
+        </member>
+        <member name="M:Healthcare.DAL.PatientDAL.GetPatientFamily(System.String)">
+            取得病患家屬資訊
+        </member>
+        <member name="M:Healthcare.DAL.PatientDAL.EditPatient(Healthcare.Models.PatientInfoData)">
+            編輯病患資訊
+        </member>
+        <member name="M:Healthcare.DAL.PatientDAL.DeletePatient(System.String)">
+            刪除預約資訊
+        </member>
+        <member name="M:Healthcare.DAL.PrescriptionDAL.GetList(Healthcare.Models.PrescriptionListReq)">
+            處方箋列表
+        </member>
+        <member name="M:Healthcare.DAL.PrescriptionDAL.GetInfo(System.String,System.String)">
+            處方箋資訊
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Healthcare.DAL.PrescriptionDAL.CheckPrescription(System.String,System.String)" -->
+        <member name="M:Healthcare.DAL.PrescriptionDAL.UpdatePrescription(Healthcare.Models.EditPrescriptionReq)">
+            更新處方箋
+        </member>
+        <member name="M:Healthcare.DAL.PrescriptionDAL.NewPrescription(Healthcare.Models.EditPrescriptionReq)">
+            新增處方箋
+        </member>
+        <member name="M:Healthcare.DAL.PrescriptionDAL.DeletePrescription(System.String,System.String)">
+            刪除處方箋
+        </member>
+        <member name="M:Healthcare.DAL.StatisticDAL.GetSummary(System.String,System.String)">
+            取得看診統計摘要
+        </member>
+        <member name="M:Healthcare.DAL.StatisticDAL.GetStatistic(System.String,System.String)">
+            統計圖表
+        </member>
+        <member name="M:Healthcare.DAL.StatisticDAL.GetLineChart(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            折線圖
+        </member>
+        <member name="M:Healthcare.DAL.StatisticDAL.GetBarChart(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            長條圖
+        </member>
+        <member name="M:Healthcare.DAL.StatisticDAL.GetPieChart(System.String,System.String,System.String)">
+            病患個案分析圓餅圖
+        </member>
+        <member name="T:Healthcare.Models.ApiResponse">
+            <summary>
+            API回傳訊息
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.ApiResponse.ApiStatus">
+            <summary>
+            API回傳狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.ApiResponse.Error">
+            <summary>
+            錯誤訊息
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.ErrorMessage">
+            <summary>
+            API錯誤訊息
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.ErrorMessage.Code">
+            <summary>
+            錯誤代碼
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.ErrorMessage.Message">
+            <summary>
+            錯誤訊息
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.UnauthenticatedMessage">
+            <summary>
+            ErrorMessage: 未登入
+            </summary>
+        </member>
+        <member name="M:Healthcare.Models.UnauthenticatedMessage.#ctor">
+            <summary>
+            建構式
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.NoDataFoundMessage">
+            <summary>
+            ErrorMessage: 無資料
+            </summary>
+        </member>
+        <member name="M:Healthcare.Models.NoDataFoundMessage.#ctor">
+            <summary>
+            建構式
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.ExceptionMessage">
+            <summary>
+            ErrorMessage: 伺服器錯誤
+            </summary>
+        </member>
+        <member name="M:Healthcare.Models.ExceptionMessage.#ctor">
+            <summary>
+            建構式
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentListReq">
+            <summary>
+            門診預約列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.Date">
+            <summary>
+            預約日期
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.Specialty">
+            <summary>
+            預約科別
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListReq.Doctor">
+            <summary>
+            醫生姓名
+            </summary>
+            <example></example>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentListData">
+            <summary>
+            門診預約列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.PatientStatus">
+            <summary>
+            病患狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.UrgencyLevel">
+            <summary>
+            緊急程度
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.AppointmentDate">
+            <summary>
+            預約時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.Specialty">
+            <summary>
+            預約科別
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListData.Doctor">
+            <summary>
+            醫生姓名
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentListRes">
+            <summary>
+            門診預約列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentListRes.Data">
+            <summary>
+            門診預約列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentInfoReq">
+            <summary>
+            門診預約資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoReq.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+            <example></example>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentInfoData">
+            <summary>
+            門診預約資訊(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.HealthCenter">
+            <summary>
+            醫療中心
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.InpatientID">
+            <summary>
+            住院編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.PatientStatus">
+            <summary>
+            病患狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.UrgencyLevel">
+            <summary>
+            緊急程度
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.AppointmentDate">
+            <summary>
+            預約時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.Specialty">
+            <summary>
+            預約科別
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.Doctor">
+            <summary>
+            醫生姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.Consultation">
+            <summary>
+            諮詢服務
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.Status">
+            <summary>
+            預約狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoData.IsInvoice">
+            <summary>
+            是否需要開立收據
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AppointmentInfoRes">
+            <summary>
+            門診預約資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AppointmentInfoRes.Data">
+            <summary>
+            門診預約資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteAppointmentReq">
+            <summary>
+            刪除門診預約(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeleteAppointmentReq.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+            <example></example>
+        </member>
+        <member name="T:Healthcare.Models.DeleteAppointmentRes">
+            <summary>
+            刪除門診預約(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditAppointmentReq">
+            <summary>
+            門診預約編輯(Request)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditAppointmentRes">
+            <summary>
+            門診預約編輯(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DiagnosisInfoReq">
+            <summary>
+            診斷訊息(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoReq.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DiagnosisInfoData">
+            <summary>
+            診斷資訊(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.ChiefComplaint">
+            <summary>
+            主訴
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.AuxDiagnosis">
+            <summary>
+            輔助診斷訊息(GAI)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.FinalDiagnosis">
+            <summary>
+            最終診斷訊息(醫生)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.Orders">
+            <summary>
+            醫囑
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoData.HealthEducation">
+            <summary>
+            衛教資訊
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DiagnosisInfoRes">
+            <summary>
+            診斷資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DiagnosisInfoRes.Data">
+            <summary>
+            診斷資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditDiagnosisReq">
+            <summary>
+            編輯診斷資訊(Request)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditDiagnosisRes">
+            <summary>
+            編輯診斷資訊(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyListReq">
+            <summary>
+            家屬列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListReq.FamilyName">
+            <summary>
+            家屬姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListReq.PhoneNo">
+            <summary>
+            手機號碼
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListReq.Tel">
+            <summary>
+            聯絡電話
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyListData">
+            <summary>
+            家屬列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.SeqNo">
+            <summary>
+            家屬編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.FamilyName">
+            <summary>
+            家屬姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.Relationship">
+            <summary>
+            關係
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.Tel">
+            <summary>
+            聯絡電話
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.PhoneNo">
+            <summary>
+            手機號碼
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListData.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyListRes">
+            <summary>
+            家屬列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyListRes.Data">
+            <summary>
+            家屬列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyInfoReq">
+            <summary>
+            家屬資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoReq.SeqNo">
+            <summary>
+            家屬編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyInfoData">
+            <summary>
+            家屬資訊(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.SeqNo">
+            <summary>
+            家屬編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.FamilyName">
+            <summary>
+            家屬姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Nationality">
+            <summary>
+            國籍
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Relationship">
+            <summary>
+            關係
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Tel">
+            <summary>
+            聯絡電話
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.PhoneNo">
+            <summary>
+            手機號碼
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Company">
+            <summary>
+            公司名稱
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Address">
+            <summary>
+            住家地址
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoData.Note">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.FamilyInfoRes">
+            <summary>
+            家屬資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.FamilyInfoRes.Data">
+            <summary>
+            家屬資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditFamilyReq">
+            <summary>
+            編輯家屬(Request)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditFamilyRes">
+            <summary>
+            編輯家屬(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteFamilyReq">
+            <summary>
+            刪除家屬(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeleteFamilyReq.SeqNo">
+            <summary>
+            家屬編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteFamilyRes">
+            <summary>
+            刪除家屬(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientListReq">
+            <summary>
+            住院列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListReq.InpatientID">
+            <summary>
+            住院編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListReq.HospitalDate">
+            <summary>
+            住院日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListReq.HospitalBed">
+            <summary>
+            病房床號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListReq.AdmissionType">
+            <summary>
+            住院類型
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientListData">
+            <summary>
+            住院列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.InpatientID">
+            <summary>
+            住院編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.HospitalDate">
+            <summary>
+            住院日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.DischargedDate">
+            <summary>
+            出院日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.HospitalBed">
+            <summary>
+            病房床號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.AdmissionType">
+            <summary>
+            住院類型
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListData.IsPaid">
+            <summary>
+            付費別
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientListRes">
+            <summary>
+            住院列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientListRes.Data">
+            <summary>
+            住院列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientInfoReq">
+            <summary>
+            住院資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientInfoReq.InpatientID">
+            <summary>
+            住院編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientInfoData">
+            <summary>
+            住院資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.InpatientInfoRes">
+            <summary>
+            住院資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.InpatientInfoRes.Data">
+            <summary>
+            住院資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditInpatientReq">
+            <summary>
+            編輯住院資訊(Request)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditInpatientRes">
+            <summary>
+            編輯住院資訊(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteInpatientReq">
+            <summary>
+            刪除住院資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeleteInpatientReq.InpatientID">
+            <summary>
+            住院編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteInpatientRes">
+            <summary>
+            刪除住院資訊(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuListReq">
+            <summary>
+            加護病房列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListReq.ICU_ID">
+            <summary>
+            加護病房編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListReq.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListReq.AdmmitedDate">
+            <summary>
+            入住日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListReq.DischargedDate">
+            <summary>
+            出院日期
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuListData">
+            <summary>
+            加護病房列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.ICU_ID">
+            <summary>
+            加護病房編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.AdmittedDate">
+            <summary>
+            入住日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.Duration">
+            <summary>
+            入住期間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.DischargedDate">
+            <summary>
+            出院日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.IsAdmission">
+            <summary>
+            是否成功入住
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListData.IsDischarged">
+            <summary>
+            是否成功出院
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuListRes">
+            <summary>
+            加護病房列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuListRes.Data">
+            <summary>
+            加護病房列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuInfoReq">
+            <summary>
+            加護病房資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoReq.ICU_ID">
+            <summary>
+            ICU編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuInfoData">
+            <summary>
+            加護病房資訊(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.ICU_ID">
+            <summary>
+            加護病房編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.AdmittedDate">
+            <summary>
+            入住日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.Duration">
+            <summary>
+            入住期間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.DischargedDate">
+            <summary>
+            出院日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.IsAdmission">
+            <summary>
+            是否成功入住
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.IsDischarged">
+            <summary>
+            是否成功出院
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoData.VentilationLog">
+            <summary>
+            機械通氣紀錄
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.MedVentilation">
+            <summary>
+            機械通氣紀錄
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.IsCurrent">
+            <summary>
+            是否使用中
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.StartTime">
+            <summary>
+            開始時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.EndTime">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.Duration">
+            <summary>
+            通氣期間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.VentilationType">
+            <summary>
+            通氣類型(I:侵入性, N:非侵入性, H:HFNC)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.MedVentilation.Remarks">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.IcuInfoRes">
+            <summary>
+            加護病房資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.IcuInfoRes.Data">
+            <summary>
+            加護病房資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteIcuReq">
+            <summary>
+            刪除ICU資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeleteIcuReq.ICU_ID">
+            <summary>
+            ICU編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeleteIcuRes">
+            <summary>
+            刪除ICU資訊(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientListReq">
+            <summary>
+            病患列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListReq.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListReq.HospitalStatus">
+            <summary>
+            住院狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListReq.Doctor">
+            <summary>
+            主治醫師(姓名)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientListData">
+            <summary>
+            病患列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.Sex">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.Age">
+            <summary>
+            年齡
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.HospitalStatus">
+            <summary>
+            住院狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.PrimaryCare">
+            <summary>
+            主治醫師
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListData.DoctorName">
+            <summary>
+            主治醫生姓名
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientListRes">
+            <summary>
+            病患列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientListRes.Data">
+            <summary>
+            病患列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientInfoReq">
+            <summary>
+            病患資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientInfoData">
+            <summary>
+            病患資訊(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.PatientName">
+            <summary>
+            病患姓名
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.IDNumber">
+            <summary>
+            身分證字號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Sex">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Age">
+            <summary>
+            年齡
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Nationality">
+            <summary>
+            國籍
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Address">
+            <summary>
+            住址
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.PhoneNo">
+            <summary>
+            手機號碼
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.HospitalStatus">
+            <summary>
+            住院狀態
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.PrimaryCare">
+            <summary>
+            主治醫師
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.IsDeceased">
+            <summary>
+            存歿
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Note">
+            <summary>
+            病患重要資訊
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoData.Families">
+            <summary>
+            病患家屬列表
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PatientInfoRes">
+            <summary>
+            病患資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PatientInfoRes.Data">
+            <summary>
+            病患資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditPatientReq">
+            <summary>
+            編輯病患(Request)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditPatientRes">
+            <summary>
+            編輯病患(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeletePatientReq">
+            <summary>
+            刪除病患(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeletePatientReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeletePatientRes">
+            <summary>
+            刪除病患(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionListReq">
+            <summary>
+            處方箋列表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListReq.ViewMode">
+            <summary>
+            列表瀏覽模式(Normal:一般/Recent:最近)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListReq.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListReq.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListReq.IsPrint">
+            <summary>
+            是否列印
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionListData">
+            <summary>
+            處方箋列表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.MedicamentID">
+            <summary>
+            藥品編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.MedicamentName">
+            <summary>
+            藥品名稱
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.LotNo">
+            <summary>
+            藥品批號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.Indication">
+            <summary>
+            用藥指示
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.Dose">
+            <summary>
+            劑量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.DoseUnit">
+            <summary>
+            劑量單位
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.Form">
+            <summary>
+            藥劑規格
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.CommonDosage">
+            <summary>
+            通常劑量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.Qty">
+            <summary>
+            數量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.TreatmentStart">
+            <summary>
+            給藥起始時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.TreatmentEnd">
+            <summary>
+            給藥結束時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.IsPrint">
+            <summary>
+            是否印出
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListData.CreateDate">
+            <summary>
+            開立日期
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionListRes">
+            <summary>
+            處方箋列表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionListRes.Data">
+            <summary>
+            處方箋列表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.Prescription">
+            <summary>
+            處方箋
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.MedicamentID">
+            <summary>
+            藥品編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Indication">
+            <summary>
+            用藥指示
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.AllowSubsitution">
+            <summary>
+            可否替代
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.IsPrint">
+            <summary>
+            是否列印
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Form">
+            <summary>
+            藥劑形式
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.AdminRoute">
+            <summary>
+            給藥途徑
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.TreatmentStart">
+            <summary>
+            給藥起始時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.TreatmentEnd">
+            <summary>
+            給藥結束時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.LotNo">
+            <summary>
+            藥物批號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Dose">
+            <summary>
+            劑量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.DoseUnit">
+            <summary>
+            劑量單位
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Qty">
+            <summary>
+            劑量份數
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.CommonDosage">
+            <summary>
+            通常劑量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.AdminHours">
+            <summary>
+            給(服)藥時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Frequency">
+            <summary>
+            特別給藥頻率
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Unit">
+            <summary>
+            特別給藥劑量單位
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_TreatmentDur">
+            <summary>
+            特別給藥間隔
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_TreatmentPer">
+            <summary>
+            特別給藥週期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Review">
+            <summary>
+            特別給藥複查日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Qty">
+            <summary>
+            特別給藥數量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Refills">
+            <summary>
+            特別給藥續藥次數
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.Sp_Comment">
+            <summary>
+            特別給藥備註
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.Prescription.CreateDate">
+            <summary>
+            開立日期
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionInfoReq">
+            <summary>
+            處方箋資訊(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionInfoReq.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionInfoReq.MedicamentID">
+            <summary>
+            箋藥劑編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionInfoData">
+            <summary>
+            處方箋資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PrescriptionInfoRes">
+            <summary>
+            處方箋資訊(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PrescriptionInfoRes.Data">
+            <summary>
+            處方箋資訊(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditPrescriptionReq">
+            <summary>
+            編輯處方箋(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.EditType">
+            <summary>
+            編輯類型(New:新增/Edit:編輯)
+            </summary>
+            <example>New</example>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.AppointmentID">
+            <summary>
+            門診預約編號
+            </summary>
+            <example>APT00001</example>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.MedicamentID">
+            <summary>
+            藥品編號
+            </summary>
+            <example>MED000001</example>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Indication">
+            <summary>
+            用藥指示
+            </summary>
+            <example>Pain Relief</example>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.AllowSubsitution">
+            <summary>
+            可否替代(Y:可替代/N:不可替代)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.IsPrint">
+            <summary>
+            是否列印(Y:是/N:否)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Form">
+            <summary>
+            藥劑形式(代碼詳見參考文件)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.TreatmentStart">
+            <summary>
+            給藥起始時間(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.TreatmentEnd">
+            <summary>
+            給藥結束時間(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Dose">
+            <summary>
+            劑量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.DoseUnit">
+            <summary>
+            劑量單位
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Qty">
+            <summary>
+            劑量份數
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Frequency">
+            <summary>
+            特別給藥頻率
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Unit">
+            <summary>
+            特別給藥劑量單位
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_TreatmentStart">
+            <summary>
+            特別給藥起始時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_TreatmentEnd">
+            <summary>
+            特別給藥結束時間
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Review">
+            <summary>
+            特別給藥複查日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Qty">
+            <summary>
+            特別給藥數量
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Refills">
+            <summary>
+            特別給藥續藥次數
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.EditPrescriptionReq.Sp_Comment">
+            <summary>
+            特別給藥備註
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.EditPrescriptionRes">
+            <summary>
+            編輯處方箋(Response)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeletePrescriptionReq">
+            <summary>
+            刪除處方箋(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeletePrescriptionReq.AppointmentID">
+            <summary>
+            預約編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.DeletePrescriptionReq.MedicamentID">
+            <summary>
+            藥品編號
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.DeletePrescriptionRes">
+            <summary>
+            刪除處方箋(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryReq.StartDate">
+            <summary>
+            起始日期(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryReq.EndDate">
+            <summary>
+            結束日期(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.SummaryData">
+            <summary>
+            統計摘要(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryData.AppointmentDate">
+            <summary>
+            就診日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryData.Sex">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryData.FinalDiagnosis">
+            <summary>
+            最終診斷病狀
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.SummaryRes">
+            <summary>
+            統計摘要(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.SummaryRes.Data">
+            <summary>
+            統計摘要(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.StatisticReq">
+            <summary>
+            統計圖表(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.StatisticReq.Mode">
+            <summary>
+            圖表模式(week/month/year)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.StatisticReq.Date">
+            <summary>
+            日期(yyyy/MM/dd | yyyy/MM | yyyy)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.StatisticData">
+            <summary>
+            統計圖表(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.StatisticData.LineChart">
+            <summary>
+            折線圖
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.StatisticData.BarChart">
+            <summary>
+            長條圖
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.StatisticRes">
+            <summary>
+            統計圖表(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.StatisticRes.Data">
+            <summary>
+            統計圖表(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.LineChartData">
+            <summary>
+            折線圖(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.LineChartData.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.LineChartData.Count">
+            <summary>
+            人數
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.LineChart">
+            <summary>
+            折線圖
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.LineChart.Data">
+            <summary>
+            折線圖(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.BarChartData">
+            <summary>
+            長條圖(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.BarChartData.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.BarChartData.MaleCount">
+            <summary>
+            男性人數
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.BarChartData.FemaleCount">
+            <summary>
+            女性人數
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.BarChart">
+            <summary>
+            長條圖
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.BarChart.Data">
+            <summary>
+            長條圖(Data)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AnalysisReq">
+            <summary>
+            病患分析(Request)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AnalysisReq.PatientID">
+            <summary>
+            病患編號
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AnalysisReq.StartDate">
+            <summary>
+            起始日期(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AnalysisReq.EndDate">
+            <summary>
+            結束日期(yyyy/MM/dd)
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.PieChartData">
+            <summary>
+            圓餅圖(Data)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PieChartData.Disease">
+            <summary>
+            疾病名稱
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.PieChartData.Count">
+            <summary>
+            就診次數
+            </summary>
+        </member>
+        <member name="T:Healthcare.Models.AnalysisRes">
+            <summary>
+            病患分析(Response)
+            </summary>
+        </member>
+        <member name="P:Healthcare.Models.AnalysisRes.Data">
+            <summary>
+            圓餅圖(Data)
+            </summary>
+        </member>
+        <member name="T:AccountManager.Models.Header">
+            <summary>
+            標頭資訊
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Header.Alg">
+            <summary>
+            雜湊(演算法)
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Header.Type">
+            <summary>
+            Token種類
+            </summary>
+        </member>
+        <member name="T:AccountManager.Models.Payload">
+            <summary>
+            用戶資訊
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Payload.UID">
+            <summary>
+            使用者帳號
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Payload.Username">
+            <summary>
+            使用者名稱
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Payload.DeviceID">
+            <summary>
+            設備編號
+            </summary>
+        </member>
+        <member name="P:AccountManager.Models.Payload.LoginTime">
+            <summary>
+            登入時間
+            </summary>
+        </member>
+    </members>
+</doc>
